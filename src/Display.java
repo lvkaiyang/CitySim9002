@@ -14,8 +14,8 @@ public class Display {
 
     public void ShowMessages() {
         int VisitorNum = 1;
-        RandomVisitors randomVisitors = new RandomVisitors();
-        VisitIteration visitIteration = new VisitIteration(location);
+        RandomVisitors randomVisitors = new RandomVisitors(seed);
+        VisitIteration visitIteration = new VisitIteration(location, seed);
         Iterator VisitorsIterator = randomVisitors.VisitorsList().iterator();
         Iterator PointIterator;
         System.out.println("Welcome to CitySim! Your seed is " + seed + ".");
